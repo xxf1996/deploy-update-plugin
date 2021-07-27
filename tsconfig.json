@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+    "baseUrl": ".",
+    "strict": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "noImplicitAny": false,
+    "module": "ESNext",
+    "target": "ES2017",
+    "outDir": "dist",
+    "noEmitOnError": true,
+    "types": [
+      "vite/client",
+      "node"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "index.ts"
+  ],
+  "exclude": [
+    "lib",
+    "node_modules"
+  ]
+}
