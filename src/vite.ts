@@ -13,7 +13,6 @@ export function createDeployUpdatePlugin (pluginOption: PluginOptions): Plugin {
   let config: Parameters<Required<Plugin>['configResolved']>[0] | undefined
   let options: PluginOptions = Object.assign({
     duration: 30,
-    version: 'none',
     type: 'time'
   }, pluginOption)
   return {

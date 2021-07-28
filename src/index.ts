@@ -1,7 +1,7 @@
 import { createDeployUpdatePlugin } from './vite'
 import { DeployUpdatePlugin } from './webpack'
 
-export default {
+export {
   createDeployUpdatePlugin,
   DeployUpdatePlugin
 }
