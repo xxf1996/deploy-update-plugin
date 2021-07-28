@@ -111,5 +111,6 @@ export default defineComponent({
 ## 插件技术栈
 
 - `TS`
-- `tsup`：一款轻量级`TS bundler`，适合纯`TS`项目打包；
+- `tsup`：一款轻量级`TS bundler`，适合纯`TS`项目打包（参考自：[vite-plugin-style-import](https://github.com/anncwb/vite-plugin-style-import)）；
 - `cheerio`：`node`端`DOM`处理库，类`jQuery`语法；
+
