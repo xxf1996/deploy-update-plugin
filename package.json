@@ -1,6 +1,6 @@
 {
   "name": "@ym/deploy-update-plugin",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
   "module": "dist/index.mjs",
@@ -8,7 +8,7 @@
   "scripts": {
     "build:tsc": "tsc --project tsconfig.json",
     "build": "tsup src/index.ts --dts --format esm,cjs",
-    "preinstall": "yarn build"
+    "topub": "yarn publish --registry http://localhost:4873/"
   },
   "devDependencies": {
     "@types/node": "^16.4.3",
