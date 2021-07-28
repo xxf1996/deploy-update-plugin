@@ -1,13 +1,14 @@
 {
-  "name": "deploy-update-plugin",
-  "version": "1.0.0",
+  "name": "@ym/deploy-update-plugin",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
   "module": "dist/index.mjs",
   "license": "MIT",
   "scripts": {
     "build:tsc": "tsc --project tsconfig.json",
-    "build": "tsup src/index.ts --dts --format esm,cjs"
+    "build": "tsup src/index.ts --dts --format esm,cjs",
+    "preinstall": "yarn build"
   },
   "devDependencies": {
     "@types/node": "^16.4.3",
