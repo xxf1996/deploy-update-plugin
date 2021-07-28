@@ -32,7 +32,9 @@ interface PluginOptions {
 ### DeployUpdatePlugin
 
 ```ts
-function createDeployUpdatePlugin(pluginOption: PluginOptions): Plugin
+class DeployUpdatePlugin {
+  constructor(pluginOption: PluginOptions);
+}
 ```
 
 适用于`webpack`打包部署，即`webpack`版的插件；
@@ -40,9 +42,7 @@ function createDeployUpdatePlugin(pluginOption: PluginOptions): Plugin
 ### createDeployUpdatePlugin
 
 ```ts
-class DeployUpdatePlugin {
-  constructor(pluginOption: PluginOptions);
-}
+function createDeployUpdatePlugin(pluginOption: PluginOptions): Plugin
 ```
 
 适用于`vite`打包部署，即`vite/rollup`版的插件；
