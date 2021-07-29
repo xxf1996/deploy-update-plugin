@@ -7,6 +7,14 @@
 - `webpack3/4`（`HTML Webpack Plugin` `2.0+`）
 - `vite2.0+`
 
+## 安装
+
+```bash
+npm i -D @ym/deploy-update-plugin // or
+yarn add -D @ym/deploy-update-plugin
+```
+
+
 ## API文档
 
 ### PluginOptions
@@ -107,6 +115,13 @@ export default defineComponent({
 
 至于说监听到该事件要做出什么样的逻辑或者交互，很自由，不做耦合；
 
+### 关于版本信息
+
+版本号会自动从项目根目录中`package.json`文件里面的`version`字段进行提取；
+
+### 关于部署时间
+
+部署时间为所有的`bundler`输出后，最后输出`json`文件的`Unix`时间戳；
 
 ## 插件技术栈
 
